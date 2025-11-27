@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile with gcc",
+			"type": "shell",
+			"command": "gcc",
+			"args": [
+				"-Wall",
+				"-Wextra",
+				"-Werror",
+				"${file}"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": ["$gcc"],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
+		}
+	]
+}
